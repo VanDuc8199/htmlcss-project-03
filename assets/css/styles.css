@@ -10,3 +10,111 @@ body {
     font-size: 1.6rem;
     font-family: 'Sora', sans-serif;
 }
+
+/* ==================== Comon ==================== */
+:root {
+    --primary-color: #2E80CE;
+    --secondary-color: #10375C;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+
+}
+.btn {
+    display: inline-block;
+    min-width: 205px;
+    height: 60px;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.76;
+    text-align: center;
+    color: #FFFFFF; 
+}
+
+/* ==================== Header ==================== */
+.header {
+    height: 100vh;
+    background: var(--secondary-color);
+    padding-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+}
+
+.logo__circle::before, .logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    background: var(--primary-color);
+    width: 3em;
+    height: 3em;
+}
+
+.logo__circle::after {
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    background: #FFFFFF;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.logo__text {
+    text-align: right;
+    margin-left: 0.6em;
+    color: #FFFFFF;
+    line-height: 1.6em;
+}
+
+.logo__brand {
+    display:block;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 0 18px;
+}
+
+.navbar__link {
+    padding: 8px 12px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #C9D2DA;
+}
+
+.navbar__item--active,.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    text-align: center;
+    color: #FFFFFF;
+}
