@@ -216,3 +216,94 @@ a {
     height: 410px;
     margin-left: -6px;
 }
+
+/* ==================== Service ==================== */
+.service {
+    padding: 170px 0;
+    background: #e5e5e5;
+}
+
+.service__heading {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+
+.service__desc {
+    margin: 18px auto 70px auto;
+    width: 468px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #575f66;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    margin-right: 130px;
+}
+
+.service-list {
+    margin-bottom: 55px;
+}
+
+.service__row {
+    display: flex;
+    align-items: center;
+}
+
+.service-item {
+    display: flex;
+    margin: 8px 0;
+    padding: 16px 18px 16px 22px;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.service-item:hover {
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    margin-right: 19px;
+    flex-shrink: 0;
+    height: 60px;
+    border-radius: 50%;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    color: #10375c;
+    transition: 0.3s;
+}
+
+.service-item:hover .service-item__icon {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+.service-item__heading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.28;
+    color: #10375c;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #575f66;
+}
