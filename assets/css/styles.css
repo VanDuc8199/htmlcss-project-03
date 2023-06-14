@@ -11,7 +11,7 @@ body {
     font-family: "Sora", sans-serif;
 }
 
-/* ==================== Comon ==================== */
+/* ==================== Common ==================== */
 :root {
     --primary-color: #2e80ce;
     --secondary-color: #10375c;
@@ -19,6 +19,7 @@ body {
 
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 .container {
@@ -40,10 +41,36 @@ a {
     text-align: center;
     color: #ffffff;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover {
     opacity: 0.8;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.control__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+    color: #575f66;
+    transition: 0.3s;
+}
+
+.control__btn:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
 }
 /* ==================== Header ==================== */
 .header {
@@ -377,4 +404,180 @@ a {
 
 .work-item:hover .work-item__more {
     color: var(--primary-color);
+}
+
+/* ==================== Work ==================== */
+.feature {
+    padding: 170px 0 70px 0;
+    background: #e5e5e5;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    gap: 0 130px;
+}
+
+.feature__media {
+    width: 49%;
+}
+
+.feature__images {
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+
+.feature__img {
+    height: 370px;
+    width: 512px;
+    object-fit: cover;
+    filter: drop-shadow(0px 14px 28px rgba(0, 0, 0, 0.07));
+    border-radius: 6px;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    top: 121px;
+    left: 238px;
+    width: 332px;
+}
+
+.feature__heading {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--secondary-color);
+}
+
+.feature__desc {
+    margin: 18px 0 38px 0;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #575f66;
+}
+
+/* ==================== Member ==================== */
+.member {
+    padding: 100px 0;
+    background: #e5e5e5;
+}
+
+.member-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.member-header__heading {
+    margin-bottom: 38px;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--secondary-color);
+}
+
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin: 70px 0 38px;
+}
+
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+
+.member-item__image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 270px;
+    height: 318px;
+    background: #eaf6ff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item__thumb {
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #10375c;
+}
+
+.member-item__title {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #575f66;
+}
+
+/* ==================== Instal ==================== */
+.instal {
+    padding: 165px 0 70px;
+    background: #e5e5e5;
+}
+
+.instal__inner {
+    position: relative;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.instal__img {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.instal__content {
+    padding: 76px 70px 75px 514px;
+}
+.instal__heading {
+    width: 489px;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.instal_desc {
+    margin: 18px 0 38px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.76;
+    color: #ffffff;
+}
+
+.instal-row {
+    display: flex;
+    align-items: center;
+    gap: 0 28px;
+}
+
+.instal__link {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.instal__link:hover {
+    color: #000000;
 }
